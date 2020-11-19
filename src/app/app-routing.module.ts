@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { DataTablesNetComponent } from './tables/data-tables-net/data-tables-net.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'data-tables-net', component: DataTablesNetComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
