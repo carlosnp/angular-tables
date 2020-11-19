@@ -6,10 +6,14 @@ declare var $: any;
   styleUrls: ['./data-tables-net.component.scss']
 })
 export class DataTablesNetComponent implements OnInit {
+  dtOptions: DataTables.Settings = {};
 
   constructor() { }
 
   ngOnInit(): void {
+    this.dtOptions = {
+      pagingType: 'full_numbers'
+    };
   }
 
 }
