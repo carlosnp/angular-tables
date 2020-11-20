@@ -1,5 +1,7 @@
 import { Ng2CompleterModule } from '@akveo/ng2-completer';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 // Tables Packages
 import { DataTablesModule } from 'angular-datatables';
@@ -25,7 +27,10 @@ import { SmartTablesComponent } from './tables/smart-tables/smart-tables.compone
     AppRoutingModule,
     DataTablesModule,
     Ng2SmartTableModule,
-    Ng2CompleterModule
+    Ng2CompleterModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
