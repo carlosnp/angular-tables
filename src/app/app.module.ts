@@ -12,6 +12,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { DataTablesNetComponent } from './tables/data-tables-net/data-tables-net.component';
 import { SmartTablesComponent } from './tables/smart-tables/smart-tables.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdbTablesComponent } from './tables/mdb-tables/mdb-tables.component';
 
 
 
@@ -20,7 +23,8 @@ import { SmartTablesComponent } from './tables/smart-tables/smart-tables.compone
     AppComponent,
     HeaderComponent,
     DataTablesNetComponent,
-    SmartTablesComponent
+    SmartTablesComponent,
+    MdbTablesComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import { SmartTablesComponent } from './tables/smart-tables/smart-tables.compone
     Ng2CompleterModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MDBBootstrapModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
